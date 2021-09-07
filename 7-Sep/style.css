@@ -5,10 +5,13 @@
   background-color: red;
   border: green 10px solid;
   margin: 20px 50px;
-
-  /* Top right bottom left */
   /*  margin: 20px 50px;  */
   /* top&&Bottom, left&&right */
+  /* Top right bottom left */
+  /* margin: 20px 20px 20px 20px; */
+  /* margin: 20px; the same as above if you want to set the margin 20px for all sides the same */
+  /* margin: 10px 20px 5px 40px */
+  /* margin: top right bottom left; */
   /* border-style: ;
   border-width: ;
   border-color: ; */
