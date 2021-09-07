@@ -1,0 +1,17 @@
+body {
+  /* rgb */
+  background-color: #9ceef1;
+  color: rgb(255, 50, 0);
+}
+
+.heading {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: red;
+}
