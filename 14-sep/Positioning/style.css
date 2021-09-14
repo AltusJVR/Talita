@@ -1,0 +1,44 @@
+:root {
+  --lightness: 50%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+
+.container {
+  background-color: #fff;
+  outline: 2px solid hsl(300, 100%, 100%);
+  min-height: 100vh;
+  width: 50vw;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  outline: 2px solid rgb(13, 217, 108);
+}
+.box-1 {
+  background-color: hsl(120, 50%, var(--lightness));
+}
+.box-2 {
+  background-color: hsl(180, 50%, var(--lightness));
+}
+
+.box-3 {
+  background-color: hsl(240, 50%, var(--lightness));
+}
+
+.box-4 {
+  background-color: hsl(300, 50%, var(--lightness));
+}
+
+.box-5 {
+  background-color: hsl(360, 50%, var(--lightness));
+}
+
+.box-6 {
+  background-color: hsl(60, 50%, var(--lightness));
+}
