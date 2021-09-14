@@ -1,5 +1,14 @@
 .container {
   /* Do someting */
   /* Flex */
-  /* Grid */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-center;
+  justify-content: space-between;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
