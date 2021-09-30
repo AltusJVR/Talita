@@ -27,6 +27,57 @@ const notANumber = NaN;
 // console.log(
 //   `number: ${typeof number}, number2:${typeof number2}, string:${typeof string}, True:${typeof True}, False:${typeof false}, Null:${typeof Null}, notANumber:${typeof notANumber}`
 // );
+
+/* Functions */
+/* ES 2005 function still valid */
+function add(a, b) {
+  console.log(a + b, "add function");
+  return a + b;
+}
+
+// add(1, 2); =================
+/* ES2016  function new way of writing functions, on new projects rather use this */
+const multiply = (a, b) => {
+  console.log(a * b, "multiply function");
+};
+
+// multiply(add(2, 4), add(10, 10)); ===============
+
+const testArray = ["one", "two", "three", "four"];
+/* Loops */
+/* for(let i = 0; i < arr.length; i++ ) */
+for (let i = testArray.length - 1; i >= 0; i--) {
+  /* i = counter because it is an array we ar looping over we can use the counter to access the index of the array elements*/
+  console.log(`\nValue: ${testArray[i]}, Index: ${i} old for loop --`);
+}
+for (let i = 0; i <= testArray.length; i++) {
+  /* i = counter because it is an array we ar looping over we can use the counter to access the index of the array elements*/
+  console.log(`\nValue: ${testArray[i]}, Index: ${i} old for loop ++`);
+}
+/* for(const item in array) */
+for (const num in testArray) {
+  console.log(num);
+  /* num = index inside array index starts at 0 not!!!!! 1 */
+}
+/* for(const item of object) */
+for (const num of testArray) {
+  console.log(num);
+  /* num = value of item in the array */
+}
+/* arr.forEach(item => {doSomething}) */
+testArray.forEach((value, x) => {
+  console.log(`Value: ${value}, Index: ${x}`);
+});
+
+let num = 0;
+while (num !== 10) {
+  for (let i = 0; i <= 10; i++) {
+    console.log(`for loop while ${num}`);
+    num = i;
+  }
+  console.log(num);
+}
+
 /* Equality */
 /* ==  equal*/
 // console.log("1" == 1, "'1' == 1");
@@ -48,26 +99,7 @@ const notANumber = NaN;
 /* Objects */
 /* [1, 2, 3, 4] array */
 /* {key: "value"} object */
-/* Functions */
 
-function add(a, b) {
-  console.log(a + b, "add function");
-  return a + b;
-}
-
-// add(1, 2); =================
-
-const multiply = (a, b) => {
-  console.log(a * b, "multiply function");
-};
-
-// multiply(add(2, 4), add(10, 10)); ===============
-
-/* Loops */
-/* for(let i = 0; i < arr.length; i++ ) */
-/* for(const item in array) */
-/* for(const item of object) */
-/* arr.forEach(item => {doSomething}) */
 /* Conditional Statements */
 /* 
 if(something){
@@ -75,9 +107,4 @@ if(something){
 }else{
   doSomething
 }
-*/
-/* 
-while(something is true){
-  doSomething
-} 
 */
