@@ -82,21 +82,27 @@ function showCallback(a, b) {
 /* {key: "value"} object */
 
 const testArray = ["one", "two", "three", "four"];
+
 const user1 = {
   userName: "Talita",
   age: 30,
   occupation: "Dev",
   married: false,
+  array: [],
 };
+
 const array2 = [{ obj: 1 }, { obj: 2 }];
 
 /* Stop here============================ */
 /* Loops */
 /* for(let i = 0; i < arr.length; i++ ) ============= */
-for (let i = testArray.length - 1; i >= 0; i--) {
+for (let i = 0; i <= testArray.length; i++) {
   /* i = counter because it is an array we are looping over we can use the counter to access the index of the array elements*/
-  // console.log(`\nValue: ${testArray[i]}, Index: ${i} old for loop --`);
+  // console.log(`Value: ${testArray[i]}, Index: ${i} old for loop --`);
+  // console.log(`Value ${testArray[i]} Index: ${i} old for loop`)
+  // console.log("Value" + testArray[i] + " " + ....)
 }
+
 for (let i = 0; i <= testArray.length; i++) {
   /* i = counter because it is an array we ar looping over we can use the counter to access the index of the array elements*/
   // console.log(`\nValue: ${testArray[i]}, Index: ${i} old for loop ++`);
@@ -113,40 +119,37 @@ for (const num of testArray) {
   /* num = value of item in the array */
 }
 /* arr.forEach(item => {doSomething})  ============= */
-testArray.forEach((value, x) => {
-  // console.log(`Value: ${value}, Index: ${x}`);
+testArray.forEach((value, index) => {
+  // console.log(`Value: ${value}, Index: ${index}`);
+});
+
+testArray.forEach((element, index) => {
+  // console.log(element, index);
 });
 
 /* While loop ============= */
 let num = 0;
 while (num !== 10) {
   for (let i = 0; i <= 10; i++) {
-    console.log(`for loop while ${num}`);
+    // console.log(`for loop while ${num}`);
     num = i;
   }
-  console.log(num);
+  // console.log(num);
 }
 
 /* Conditional Statements */
-/* 
-if(something){
-  doSomething
-}else{
-  doSomething
-}
-*/
 
-// function checkIf() { =========================
-//   if (something) {
-//    dosomething
-//    return /* Return stops the other if() from running in this function */
-//
-//   }
-//   if (somethingselse) {
-//      dosomething
-//     return
-//   } else {
-//      dosomething;
-//      return
-//   }
-// }
+function checkIf() {
+  let name3 = "Talita";
+
+  if (name3 === "Talita") {
+    console.log(name3);
+  }
+  if (name3 === "Altus") {
+    console.log(name3);
+  } else {
+    console.log(name3);
+  }
+}
+
+checkIf();

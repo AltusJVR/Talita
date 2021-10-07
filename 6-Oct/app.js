@@ -6,16 +6,18 @@
 /* You can visualize the document as a javascript object with key and value pairs */
 /* For example we can see the Classlist of an element on the body */
 const documentClassList = document.body.classList;
-console.dir(documentClassList);
+// console.dir(documentClassList);
 
 /* How to target specific elements */
 
-const container = document.querySelector(".container");
+const container = document// const container
+
 /* Can select elements, classes or ID's  ("element") (".class") ("#ID") => ("body") (".container") ("#someId")*/
-container.classList.remove("body");
+.container.classList
+  .remove("body");
 container.classList.add("body-container");
 /* Contains is a method that can be used on the classlist method do methods can be chained together */
-console.log(container.classList);
+// console.log(container.classList);
 
 /* 2 ways of manipulating using methods chaining and inside of a function */
 
