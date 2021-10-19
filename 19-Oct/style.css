@@ -1,0 +1,21 @@
+.burger {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+/* This says if the burger class also has another class with clicked */
+.burger.clicked {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.burger .clicked {
+  background-color: pink;
+  /* This wont work this selector is saying a class inside of burger with the class of clicked */
+}
+
+/* This will work */
+/* body .clicked {
+  background-color: black;
+} */
