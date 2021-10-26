@@ -4,14 +4,14 @@
   background-color: red;
 }
 /* This says if the burger class also has another class with clicked */
-.burger.clicked {
+.burger.anything {
   width: 200px;
   height: 200px;
   background-color: black;
 }
 
 .burger .clicked {
-  background-color: pink;
+  color: blue;
   /* This wont work this selector is saying a class inside of burger with the class of clicked */
 }
 
@@ -19,3 +19,14 @@
 /* body .clicked {
   background-color: black;
 } */
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+.square:hover,
+.square:focus {
+  background-color: green;
+}

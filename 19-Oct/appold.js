@@ -55,20 +55,29 @@ const button = document.querySelector("button");
 let num = 0;
 
 // Define a count function
+/* = 1 sets a default for the num2 argument so if no arg is passed it uses 1 */
 const count = (num2 = 1) => {
   num += num2;
-
+  console.log(num);
   return num;
 };
 
-button.addEventListener("click", () => {
-  let countNum = count(1);
+function click() {
+  button.addEventListener("click", () => {
+    // Below can be chained together or can be handled separately
+    // document.querySelector(".counter").innerHTML = countNum; ===========
+    const counter = document.querySelector(".counter");
+    counter.innerHTML = count(1);
+  });
+}
+
+/* button.addEventListener("click", () => {
   // Below can be chained together or can be handled separately
   // document.querySelector(".counter").innerHTML = countNum; ===========
   const counter = document.querySelector(".counter");
-  counter.innerHTML = countNum;
-});
+  counter.innerHTML = count(1);
+}); */
 
-// button.addEventListener("click", count);
-
+// button.addEventListener("click", count); /* Point to function */
+click();
 /* Don't call this function just point to it, this makes this method not so great for when the function requires arguments */
