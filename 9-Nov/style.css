@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -5,19 +10,33 @@
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  background-color: darkblue;
+  background-color: #464646f1;
   height: 100vh;
 }
 
 .box {
+  box-sizing: border-box;
+  color: grey;
+  font-size: 1.5em;
   width: 200px;
   height: 200px;
-  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
   margin: 1em;
+}
+
+.box-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 678px) {
   .container {
     flex-direction: column;
+    height: 100%;
+  }
+  .box-mobile {
+    display: flex;
   }
 }
