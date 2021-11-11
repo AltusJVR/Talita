@@ -11,7 +11,33 @@ body {
   margin: 0 auto;
   width: 100%;
   background-color: #464646f1;
-  height: 100vh;
+  height: 90vh;
+}
+
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.nav-links {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: cyan;
+}
+
+.logo {
+  color: rgb(81, 180, 180);
 }
 
 .box {
@@ -31,12 +57,33 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 678px) {
+@media (max-width: 678px) {
   .container {
     flex-direction: column;
     height: 100%;
   }
   .box-mobile {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    z-index: 1;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
   }
 }
