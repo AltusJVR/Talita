@@ -1,0 +1,8 @@
+#OnHoldReasonId {
+  position: relative;
+}
+
+#OnHoldReasonId option {
+  position: absolute;
+  left: -50%;
+}

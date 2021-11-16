@@ -17,24 +17,68 @@
   </head>
   <body>
     <div
-      style="outline: 2px solid red"
-      class="container-md d-flex mx-auto my-5 p-4 justify-content-center align-items-center"
+      class="
+        container-sm
+        d-flex
+        mx-auto
+        my-5
+        p-4
+        justify-content-center
+        align-items-center
+        border border-4 border-danger
+      "
     >
       Fluid Flex Container
     </div>
-    <div class="container-fuild mx-1">
-      <div style="outline: 2px solid green" class="grid mx-auto my-5 p-4 row">
-        <div style="outline: 2px purple solid" class="col-4 text-center">Col 1</div>
-        <div style="outline: 2px purple solid" class="col-4 text-center">Col 2</div>
-        <div style="outline: 2px purple solid" class="col-4 text-center">Col 3</div>
+    <!-- mx-auto =  -->
+    <div class="container-fluid">
+      <div style="outline: 2px solid green" class="mx-auto my-5 p-4 row">
+        <div class="col-5 text-center border border-1 border-info">Col 1</div>
+        <div class="col-5 text-center border border-1 border-info">Col 2</div>
+        <div class="col-2 text-center border border-1 border-info">Col 3</div>
+        <div class="col-2 text-center border border-1 border-info">Col 4</div>
       </div>
-      <div style="outline: 2px solid green" class="grid mx-auto p-4 row">
-        <div style="outline: 2px solid blue" class="col-3 text-center my-2">Col 1</div>
-        <div style="outline: 2px solid blue" class="col-6 text-center my-2">Col 2</div>
-        <div style="outline: 2px solid blue" class="col-3 text-center my-2">Col 3</div>
-        <div style="outline: 2px solid blue" class="col-3 text-center my-2">Col 1</div>
-        <div style="outline: 2px solid blue" class="col-6 text-center my-2">Col 2</div>
-        <div style="outline: 2px solid blue" class="col-3 text-center my-2">Col 3</div>
+      <!-- Row -->
+      <div style="outline: 2px solid green" class="grid mx-auto p-4 row justify-content-center">
+        <div style="outline: 2px solid blue" class="col-3 text-center my-1">Col 1</div>
+        <div style="outline: 2px solid blue" class="col-6 text-center my-1">Col 2</div>
+        <div style="outline: 2px solid blue" class="col-3 text-center my-1">Col 3</div>
+
+        <div style="outline: 2px solid blue" class="col-2 text-center my-5">Col 1</div>
+        <div style="outline: 2px solid blue" class="col-5 text-center my-5">Col 2</div>
+        <div style="outline: 2px solid blue" class="col-3 text-center my-5">Col 3</div>
+
+        <div style="outline: 2px solid blue" class="col-1 text-center my-2">Col 1</div>
+
+        <div style="outline: 2px solid blue" class="col-2 text-center my-2">Col 2</div>
+        <div style="outline: 2px solid blue" class="col-9 text-center my-2">Col 3</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">Left</button>
+        <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-success">Right</button>
+      </div>
+
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Action
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
       </div>
     </div>
 
