@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 0 2rem;
+}
+
+.box-1 {
+  background: url(https://images.unsplash.com/photo-1594105011432-81b594b0e3cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* We can use pseudo elements as an overlay for images.  */
+/* We can use pseudo elements to insert content such as text, but this is not best practice. */
+.img-2 {
+  width: 500px;
+  height: 500px;
+}
